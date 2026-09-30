@@ -161,8 +161,14 @@ Everything is written to `result/`:
 ## Running a whole dataset
 
 `run_dataset.py` runs the full pipeline (saliency + warping) on every image of
-a zip file or folder, e.g. the [RetargetMe](https://people.csail.mit.edu/mrub/retargetme/)
-benchmark (80 images), and packs everything into one zip:
+a zip file or folder and packs everything into one zip.
+
+**Dataset**: we use the 80 images of the
+[RetargetMe](https://people.csail.mit.edu/mrub/retargetme/) benchmark
+(Rubinstein et al., SIGGRAPH Asia 2010). Download the image set from the
+RetargetMe page; the archive we used is named `images-20100824.zip`. The
+dataset is not included in this repository. Any zip or folder of
+`.png` / `.jpg` / `.jpeg` / `.bmp` images works as well.
 
 ```bash
 make
