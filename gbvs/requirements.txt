@@ -1,5 +1,5 @@
 scipy
 numpy
 scikit-learn
-opencv
+opencv-python
 matplotlib
