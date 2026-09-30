@@ -1,0 +1,38 @@
+# OpenCV built locally per README (install outside the repo, not vendored here)
+/opencv/
+/opencv_contrib/
+/opencv_local/
+/opencv-3.4.13.zip
+/opencv_contrib-3.4.13.zip
+
+# CPLEX libraries linked by the Makefile (proprietary, machine-local)
+/cplex_local/
+
+# Python virtual environment
+/env/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# graphify generated output
+/graphify-out/
+
+# pipeline build/run artifacts (regenerate via ./pipeline.sh or make)
+/output
+/experiments
+/build/
+/res/
+/result/
+
+# OS/editor cruft
+.DS_Store
+
+# Input images and saliency outputs stay local (only the folders are kept)
+/gbvs/images/*
+!/gbvs/images/.gitkeep
+/gbvs/outputs/*
+!/gbvs/outputs/.gitkeep
+
+# Datasets such as RetargetMe (images-20100824.zip); see README for the link
+/images-*.zip
